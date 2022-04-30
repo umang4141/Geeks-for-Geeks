@@ -1,0 +1,13 @@
+Arrays.sort(arr);
+          int temp=0;
+          int temp1 = 0;
+          for(int i=0;i<arr.length;i++)
+        	  {
+        	   temp = arr[1];
+        	   temp1 = arr[arr.length-2];
+          }
+          ArrayList<Integer> show = new ArrayList<Integer>();
+          show.add(temp1);
+          show.add(temp);
+          System.out.print(show);
+         
