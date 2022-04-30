@@ -1,0 +1,6 @@
+class Solution{
+    public String chartostr(char arr[], int N){
+        String str = new String(arr);
+        return str;
+    }
+}
