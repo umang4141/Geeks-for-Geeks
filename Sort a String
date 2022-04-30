@@ -1,0 +1,25 @@
+package leeeetcodeee;
+import  java.util.*;
+public class GFG {
+	 
+     static void  InvolutoryMatrix(String str1)
+	    {
+    	 
+    	 char[] ch = str1.toCharArray();
+    	 Arrays.sort(ch);
+    	 for(char c:ch)
+    	 {
+    		 System.out.print(c);
+    	 }
+	    }       
+	      
+	  public static void main (String[] args)
+	    {
+	         
+	      String str1 = ("edcab");   
+	      InvolutoryMatrix(str1);
+	    }
+}
+		
+
+
