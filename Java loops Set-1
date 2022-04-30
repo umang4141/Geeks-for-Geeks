@@ -1,0 +1,22 @@
+class Solution{
+    static ArrayList<Integer> getSum(int N){
+        // code here
+        int sum_odd = 0;
+        int sum_even = 0;
+        for(int i=1;i<=N;i++)
+        {
+            if(i%2==0)
+            {
+                sum_even +=i;
+            }
+            else
+            {
+                sum_odd +=i;
+            }
+        }
+        ArrayList<Integer>num = new ArrayList<>();
+        num.add(sum_even);
+        num.add(sum_odd);
+        return num;
+    }
+}
