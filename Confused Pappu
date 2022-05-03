@@ -1,0 +1,33 @@
+package leeeetcodeee;
+import java.util.*;
+public class Snakecase {
+	static void  InvolutoryMatrix(long l)
+    {
+	   String str = Long.toString(l);
+	   String str1 = "";
+	   for(int i=0;i<str.length();i++)
+	   {
+		   if(str.charAt(i)=='6')
+		   {
+			   str1 = str1 + '9';
+		   }
+		   else
+		   {
+			   str1 = str1 + str.charAt(i);
+		   }
+	   }
+	   //System.out.print(str1);
+	   long l1=Long.parseLong(str1);
+	   long res = l1-l;
+	   System.out.print(res);
+	   
+	   
+	}
+	public static void main (String[] args)
+    {
+         
+      long l = 56;
+  
+      InvolutoryMatrix(l);
+    }
+}
