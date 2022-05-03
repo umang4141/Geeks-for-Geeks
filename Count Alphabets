@@ -1,0 +1,14 @@
+class Solution{
+    static int Count(String S)
+    {
+        // code here
+        int count = 0;
+        String s1 = S.toLowerCase();
+        for(int i=0;i<s1.length();i++){
+        if(s1.charAt(i)>='a' && s1.charAt(i)<='z'){
+                count++;
+            }
+        }
+            return count;
+    }
+}
