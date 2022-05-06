@@ -1,0 +1,16 @@
+
+class Solution{
+    static int isSquare(String S)
+
+    {
+        //code here
+        int summe = 0;
+		
+		for(int i = 0; i < S.length(); i++) summe += S.charAt(i);
+		
+		int si = (int) Math.sqrt(summe);
+	   if(summe == si*si)
+	   return 1;
+	   else return 0;
+    }
+}
