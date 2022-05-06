@@ -1,0 +1,18 @@
+class Solution{
+    static ArrayList<Long> factorialNumbers(long N){
+        // code here
+        Scanner sc = new Scanner(System.in);
+   
+    ArrayList<Long> arrli = new ArrayList<Long>();
+    long ans = 1;
+	for(int i=1;i<N;i++)
+	{
+	   ans = ans*i;
+	   if(ans <= N)
+	   {
+	       arrli.add(ans);
+	   }
+	}
+return arrli;	
+    }
+}
