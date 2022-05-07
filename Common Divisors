@@ -1,0 +1,15 @@
+class Solution {
+    static long commDiv(long a, long b){
+        // code here
+        long res = Math.min(a,b);
+        long count = 0;
+        for(long i = 1;i<=res;i++)
+        {
+            if((a % i == 0) && (b % i == 0))
+            {
+                count++;
+            }
+        } 
+        return count;
+    }
+}
