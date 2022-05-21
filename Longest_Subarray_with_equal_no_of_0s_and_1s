@@ -1,0 +1,30 @@
+package leeeetcodeee;
+import java.util.*;
+public class Longest_SubaArray_wiht_equal_no_of_0s_and_1s {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     
+		Scanner sc = new Scanner(System.in);
+		int arr[] = {1,0,1,1,1,0,0};
+		int res = 0;
+		for(int i=0;i<arr.length;i++)
+		{
+			int c = 0,c1 = 0;
+			for(int j = i;j<arr.length;j++)
+				
+			{
+				if(arr[j]==0)
+					c++;
+				else
+					c1++;
+				if(c == c1)
+					res = Math.max(res,j-i+1);
+			}
+
+		}
+		System.out.println(res);
+		
+	}
+
+}
