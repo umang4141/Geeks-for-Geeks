@@ -1,0 +1,26 @@
+package leeeetcodeee;
+import java.util.*;
+public class Longest_suarray_with_given_sum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Scanner sc = new Scanner(System.in);
+      int k = sc.nextInt();
+      int res = 0;
+      int arr[]= {5,8,-4,-4,9,-2,2};
+      for(int i = 0;i<arr.length;i++)
+      {
+    	  int sum = 0;
+    	  for(int j=i;j<arr.length;j++)
+    	  {
+    		  sum = sum + arr[j];
+    		  if(sum == k){
+    			  res = Math.max(res,j-i+1);
+    		  }
+    	  }
+      }
+      System.out.println(res);
+      
+	}
+
+}
