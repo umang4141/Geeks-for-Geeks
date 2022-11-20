@@ -1,0 +1,14 @@
+
+//User function Template for Java
+
+class Solution {
+    int isPalindrome(String S) {
+        // code here
+        StringBuilder str = new StringBuilder(S);
+        StringBuilder reverseStr = str.reverse();
+        if(S.equals(reverseStr.toString()))
+        return 1;
+        else return 0;
+    }
+    
+};
