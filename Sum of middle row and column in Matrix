@@ -1,0 +1,26 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.io.*;
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int mat[][]={{2, 5, 7},
+                    {3, 7, 2},
+                    {5, 6, 9}};
+                    int n = mat.length;
+                    int sum_row=0;
+                    int sum_column=0;
+        for(int i=0;i<mat.length;i++)
+        {
+            sum_row+=mat[n/2][i];
+        }
+        for(int i=0;i<n;i++)
+        {
+            sum_column+=mat[i][n/2];
+        }
+        System.out.println(sum_row);
+                System.out.println(sum_column);
+
+    } 
+}
