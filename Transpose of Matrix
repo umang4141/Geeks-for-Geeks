@@ -1,0 +1,69 @@
+//{ Driver Code Starts
+//Initial Template for Java
+
+
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+class GFG
+{
+    public static void main (String[] args)throws IOException {
+        BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+        int t= Integer.parseInt(read.readLine());
+        
+        while(t-- > 0)
+        {
+            int n = Integer.parseInt(read.readLine());
+            int a[][] = new int[n][n];
+            String st[] = read.readLine().trim().split("\\s+");
+            int k = 0;
+            for(int i = 0; i < n; i++)
+                for(int j = 0; j < n; j++)
+                    a[i][j] = Integer.parseInt(st[k++]);
+
+            Solution ob = new Solution();
+            ob.transpose(a, n);
+            for(int i = 0; i < n; i++)
+                for(int j = 0; j < n;j++)
+                    System.out.print(a[i][j] + " ");
+            
+            System.out.println();
+        }
+    }
+}
+// } Driver Code Ends
+
+
+//User function Template for Java
+
+class Solution
+{
+    //Function to find transpose of a matrix.
+    static void transpose(int mat[][], int n)
+    {
+        // code here
+      
+	int N = n;
+	int i,j;
+//	int k = 0;
+//	int k1 = 0;
+    int ans[][] =  new int[N][N];
+	for(i=0;i<N;i++)
+	{
+		for(j=0;j<N;j++)
+		{
+			ans[i][j] = mat[j][i]; 
+		}
+	}
+
+for(i=0;i<ans.length;i++)
+	{
+		for(j=0;j<ans[0].length;j++)
+		{
+			mat[i][j] = ans[i][j];
+		}
+		//System.out.println();
+	}	
+    }
+}
